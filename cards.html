@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            min-height: 100vh;
+            background: #444;
+        }
+
+        .container{
+            width: 1000px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* background-color: yellowgreen; */
+        }
+
+        .container .card{
+            position: relative;
+            /* background-color: violet; */
+        }
+        .container .card .face{
+            width: 300px;
+            height: 200px;
+            transition: 0.4s;
+            /* background-color: turquoise; */
+        }
+
+        .container .card .face1{
+            position: relative;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            z-index: 1;
+            transform: translateY(100px);
+            
+        }
+
+        .container .card:hover .face1{
+            box-shadow:  
+            inset 0 0 60px #fff,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+             0 0 50px #fff,
+             -10px 0 80px #f0f,
+             10px 0 80px #0ff;
+             transform: translateY(0px);
+        }
+
+        .container .content{
+            opacity: 0.2;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        .container .card:hover .content{
+            opacity: 1;
+        }
+
+        .container  .content i{
+            opacity: 1;
+            font-size: 3rem;
+            color: #fff;
+            display: block;
+            position: relative;
+            top: 30px;
+        }
+
+        .container  h3{
+            font-size: 3rem;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container i{
+            transition: 0.5s;
+        }
+
+
+        .face2{
+            position: relative;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* padding: 200px; */
+            box-sizing: border-box;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            transform: translateY(-100px);
+        }
+
+       .card:hover .face2{
+            transform: translateY(0px);
+            transition: 0.5s all;
+
+        }
+        
+
+        p a{
+
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+       
+        .container  a{
+            text-decoration: none;
+            color: #fff;
+            box-sizing: border-box;
+            padding: 10px 24px;
+            /* margin: 19px 0 0; */
+            display: inline-block;
+            background: #444;
+            border-radius: 8px;
+        }
+
+
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <i class="fa-brands fa-windows"></i>
+                    <h3>Windows</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odit esse non mollitia in laboriosam amet ipsa hic. Exercitationem neque ea molestias consequatur expedita illum consectetur hic. Itaque, at ducimus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <i class="fa-brands fa-android"></i>
+                    <h3>Andriod</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odit esse non mollitia in laboriosam amet ipsa hic. Exercitationem neque ea molestias consequatur expedita illum consectetur hic. Itaque, at ducimus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <i class="fa-brands fa-apple"></i>
+                    <h3>Apple</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odit esse non mollitia in laboriosam amet ipsa hic. Exercitationem neque ea molestias consequatur expedita illum consectetur hic. Itaque, at ducimus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
